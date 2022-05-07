@@ -12,7 +12,7 @@ class Node {
 	}
 }
 
-class Main {
+public class Main {
 	public Node node;
 	Node prevNode = null;
 	Node headNode = null;

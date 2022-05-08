@@ -14,8 +14,8 @@ class Node {
 
 public class Main {
 	public Node node;
-	Node prevNode = null;
-	Node headNode = null;
+	public Node prevNode = null;
+	public Node headNode = null;
 
 	void convertBSTToRightSkewedTree(Node root) {
 
@@ -59,6 +59,7 @@ public class Main {
 		tree.node.left.left = new Node(10);
 		tree.node.right.left = new Node(55);
 
+		//Performs inorder Traversal and arranges elements to form skewed tree
 		tree.convertBSTToRightSkewedTree(tree.node);
 		tree.traverseRightSkewedTree(tree.headNode);
 	}
